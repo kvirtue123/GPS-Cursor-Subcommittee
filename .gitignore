@@ -1,8 +1,12 @@
 CONTRIBUTING-PROMPT.md
 Skills Best Practices Canvas.md
 Token Optimization Strategies Canvas.md
+Overall Channel Canvas.md
 discovery/drip-campaign.md
 discovery/explainer.md
+
+# Internal catalog with full asset details — source of truth for weekly releases
+CATALOG-INTERNAL.md
 
 # Canonical files contain customer project names — provenance references only, not public install targets
 rules/canonical/

@@ -8,5 +8,9 @@ discovery/explainer.md
 rules/canonical/
 patterns/canonical/
 
+# Rules and skills released alongside weekly Feed posts — not all at launch
+rules/templates/
+skills/
+
 # macOS
 .DS_Store

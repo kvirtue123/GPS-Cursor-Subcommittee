@@ -2,8 +2,9 @@ CONTRIBUTING-PROMPT.md
 Skills Best Practices Canvas.md
 Token Optimization Strategies Canvas.md
 Overall Channel Canvas.md
-discovery/drip-campaign.md
-discovery/explainer.md
+
+# Internal discovery/planning material — drip strategy, Slack canvas, Drive manifest (contains customer names), tool watchlist
+discovery/
 
 # Internal catalog with full asset details — source of truth for weekly releases
 CATALOG-INTERNAL.md
@@ -12,9 +13,12 @@ CATALOG-INTERNAL.md
 rules/canonical/
 patterns/canonical/
 
-# Rules and skills released alongside weekly Feed posts — not all at launch
+# Asset files staged for release on the maintainer's own cadence.
+# The folders + their README guides stay public so contributors know where to add; the backlog files don't.
 rules/templates/
-skills/
+patterns/templates/
+skills/*
+!skills/README.md
 
 # macOS
 .DS_Store

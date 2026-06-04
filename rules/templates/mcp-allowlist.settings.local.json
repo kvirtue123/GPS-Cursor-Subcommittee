@@ -1,0 +1,14 @@
+{
+  "_comment": "R5 — MCP / WebFetch permission allowlist template. Drop into <project>/.claude/settings.local.json. Keep this NARROW: pre-approve only the MCP tools and fetch domains the project actually needs, so the agent works from ground truth without per-call prompts and without over-broad access. Replace the entries below with your project's real needs.",
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:{{TRUSTED_DOC_DOMAIN}})",
+      "WebFetch(domain:www.lightningdesignsystem.com)",
+      "mcp__{{MCP_SERVER}}__{{MCP_TOOL}}",
+      "mcp__sf-docs__scrape_sf_docs",
+      "mcp__figma__use_figma",
+      "mcp__figma__create_new_file",
+      "mcp__figma__get_metadata"
+    ]
+  }
+}

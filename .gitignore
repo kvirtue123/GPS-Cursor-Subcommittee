@@ -1,0 +1,12 @@
+CONTRIBUTING-PROMPT.md
+Skills Best Practices Canvas.md
+Token Optimization Strategies Canvas.md
+discovery/drip-campaign.md
+discovery/explainer.md
+
+# Canonical files contain customer project names — provenance references only, not public install targets
+rules/canonical/
+patterns/canonical/
+
+# macOS
+.DS_Store

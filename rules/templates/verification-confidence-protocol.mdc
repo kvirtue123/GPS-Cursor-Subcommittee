@@ -1,0 +1,47 @@
+---
+description: Verification confidence protocol + query router for any system whose schema/API the agent must not guess (Data Cloud, external DB, undocumented API). Genericized template — replace placeholders.
+globs:
+  - "**/*.py"
+  - "**/*.sql"
+  - "**/*.cls"
+  - "**/*.js"
+  - "**/*.sh"
+  - "**/docs/**/*.md"
+alwaysApply: false
+---
+
+# {{SYSTEM_NAME}} — Verification & Confidence Protocol
+
+A guardrail for any system whose field names, API syntax, or behavior the agent **cannot safely infer from memory** (e.g. Data Cloud, an external database, an undocumented internal API). The point: replace confident hallucination with cheap verification.
+
+## Confidence Protocol (HARD RULE)
+
+Never assert {{SYSTEM_NAME}} behavior, field/column names, API syntax, or function support as fact unless verified against ONE of:
+1. **Live introspection** — `{{DESCRIBE_CMD}}` / `{{LIST_CMD}}` / `{{QUERY_CMD}}` output against the live system (strongest).
+2. **Pre-captured reference** — a doc in `{{KNOWLEDGE_DIR}}` (e.g. scraped product help).
+3. **A live docs source** — `{{DOCS_MCP_OR_SOURCE}}` when available.
+
+If none confirm the claim, say **"I'm not certain — let me verify"** and look it up before proceeding. Do not guess.
+
+## Query router (pick the right language/tool per goal)
+> Replace rows with your system's surfaces. The discipline is: each data surface has ONE correct access path.
+
+| Goal | Language / API | How to run it here |
+|------|----------------|--------------------|
+| {{SURFACE_A_GOAL}} | {{SURFACE_A_LANG}} | `{{SURFACE_A_CMD}}` |
+| {{SURFACE_B_GOAL}} | {{SURFACE_B_LANG}} | `{{SURFACE_B_CMD}}` |
+| Inspect columns/schema | catalog/describe | `{{DESCRIBE_CMD}} {{OBJECT}}` |
+
+### Anti-patterns
+- Do **not** use {{WRONG_TOOL}} for {{RIGHT_TOOL}}'s data surface.
+- Avoid `SELECT *` until you've confirmed the column list via `{{DESCRIBE_CMD}}`.
+- Do **not** assume names from upstream artifacts (CSV headers, prior docs) match the live schema — systems transform names (casing, prefixes, pluralization).
+
+## Validation workflow (before writing any query/config)
+1. `{{LIST_CMD}}` — confirm objects exist with their actual names.
+2. `{{DESCRIBE_CMD}} {{OBJECT}}` — get real field/column names.
+3. Cross-reference the build/spec doc — note divergences.
+4. Write using verified names only.
+5. Test with `{{QUERY_CMD}}` + a `LIMIT`/row cap before activating.
+
+> Pair this with a deterministic helper-script skill (see `skills/`) so introspection is one command, and only its stdout enters context.

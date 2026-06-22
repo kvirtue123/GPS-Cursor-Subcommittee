@@ -1,0 +1,41 @@
+---
+description: Token-efficient guidelines for keeping project documentation in sync. Genericized template — replace the routing table targets.
+globs: force-app/main/default/**/*
+alwaysApply: false
+---
+
+# Doc Freshness & Synchronization
+
+At a **natural stopping point** (task complete, wrapping up, or before committing), briefly decide whether documentation needs updating. **Do not** run full doc rewrites on every edit — only when the changes below apply.
+
+## Notable changes (update docs)
+- New, removed, or reworked **Topics, Actions, or Subagents**.
+- Changes to the **Data Model** (objects/fields).
+- Changes to **FSM States** or state transitions.
+- Changes to **Action Inputs/Outputs**, especially anything affecting token limits.
+- Changes to **Lightning Types** or their LWC components.
+- Implementation status changes (planned → built).
+
+## Skip doc updates (usually)
+- Typo/formatting-only, comments-only, or pure refactors with no user-visible change.
+- Restoring prior behavior after a mistake.
+- Internal renames with no architectural impact.
+- Changes to customer-provided reference material.
+
+## Which file to update
+> Replace these targets with your project's doc map.
+
+| Change type | Update |
+|---|---|
+| Topics, Actions, Global Instructions, Assumptions | `{{DESIGN_A}}` |
+| FSM States, Percepts, Business Rules, Metrics | `{{DESIGN_B}}` |
+| Object/Field Specs, Picklists, Validation Rules, ERD | `{{DESIGN_C}}` |
+| Implementation steps, build progress, deploy notes | `{{BUILD_DOC}}` |
+| High-level summaries, quick reference | `{{KNOWLEDGE_REF}}` |
+| Master design document | `{{MASTER_DESIGN}}` |
+
+## Checklist (lightweight)
+1. **Notable change this session?** If no → stop; no doc pass.
+2. **Which rows apply?** List target file(s) only.
+3. **Patch** the relevant sections; avoid full rewrites unless the doc is clearly wrong end-to-end.
+4. **Keep Master in sync** with the design docs it consolidates.

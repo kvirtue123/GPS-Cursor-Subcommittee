@@ -1,24 +1,12 @@
-CONTRIBUTING-PROMPT.md
-Skills Best Practices Canvas.md
-Token Optimization Strategies Canvas.md
-Overall Channel Canvas.md
-
-# Internal discovery/planning material — drip strategy, Slack canvas, Drive manifest (contains customer names), tool watchlist
+# Internal discovery/planning material — contains customer names
 discovery/
 
-# Internal catalog with full asset details — source of truth for weekly releases
+# Internal catalog — source of truth for weekly releases, contains customer names
 CATALOG-INTERNAL.md
 
-# Canonical files contain customer project names — provenance references only, not public install targets
+# Canonical files contain customer project names — provenance only, not public install targets
 rules/canonical/
 patterns/canonical/
-
-# Asset files staged for release on the maintainer's own cadence.
-# The folders + their README guides stay public so contributors know where to add; the backlog files don't.
-rules/templates/
-patterns/templates/
-skills/*
-!skills/README.md
 
 # macOS
 .DS_Store

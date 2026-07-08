@@ -1,0 +1,42 @@
+---
+description: Architecture guardrails and asset reuse registry for an Agentforce Agent Script project. Genericized template — replace PLACEHOLDER tokens.
+alwaysApply: true
+---
+
+# {{PROJECT_NAME}} — Reuse Registry & Architecture
+
+This rule enforces architectural constraints and dictates which org assets to reuse or exclude.
+
+## Architectural Requirements
+- **Agent Script Only**: Use the Agent Script `.agent` DSL for all agent configurations. DO NOT use legacy `genAiPlugin`, `genAiFunction`, or `genAiPlanner` metadata.
+- **Integration policy**: {{LIVE_OR_MOCKED}} — e.g. "No live HTTP callouts; {{EXTERNAL_SYSTEM}} is mocked with Apex returning static data."
+- **Flows over Apex**: Prefer Autolaunched Flows over Apex for simple SOQL queries. Use `@InvocableMethod` Apex only when Flows can't do it.
+- **Lightning Types**: {{LIGHTNING_TYPE_NOTE}} — e.g. "`{{TYPE_NAME}}` requires Enhanced Chat v2; Classic Chat is NOT supported."
+
+### EXCLUDE (SKIP)
+Do NOT deploy or use:
+- {{NAMED_CREDENTIALS_TO_SKIP}}
+- {{LIVE_API_CLASSES_TO_SKIP}}
+- Legacy Agentforce metadata (`genAiPlugins`, `genAiPlanners`, `genAiPlannerBundles`).
+
+### COPY AS-IS
+Copy these assets directly (verbatim from {{SOURCE_BRANCH_OR_ORG}}):
+- {{COPY_LIST}}
+
+### COPY & ADAPT
+Copy and modify:
+- {{ADAPT_LIST}} — note what to change (retriever IDs, permission set names, object access, etc.).
+
+## Known Deploy Gotchas
+> Keep this list short and high-signal. Add a line only when a failure recurs.
+- See companion template `salesforce-deploy-gotchas.mdc` for the portable Salesforce metadata gotcha list.
+- {{PROJECT_SPECIFIC_GOTCHA}} — e.g. "Org alias is `{{ORG_ALIAS}}`, not `{{PROJECT_NAME}}`."
+
+## Locked Decisions (do not re-litigate)
+> Optional section for LWC/LWR or metadata projects: a table of decisions the agent must not re-open unless explicitly overridden. Stops the agent from recreating existing objects, re-proposing rejected libraries, or re-deciding settled UX. Keep it to one line per decision.
+- {{LOCKED_DECISION}} — e.g. "Data model objects already exist; propose only modifications or additions, never recreate."
+- {{LOCKED_DECISION}} — e.g. "Calendar lib is FullCalendar v6 as a single static resource; no npm build step."
+- {{LOCKED_DECISION}} — e.g. "Validation is advisory: save always succeeds; alerts gate Submit only, never DML."
+
+<!-- Provenance: "Locked Decisions" section contributed from project `ItineraryBuilder` (github.com/kvirtue/ItineraryBuilder), generalized from its AGENT_REFERENCE "Design Decisions (Locked)" table. -->
+

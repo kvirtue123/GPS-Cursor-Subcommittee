@@ -48,18 +48,18 @@ For each topic: grab the **Pattern/Skill** first (the reusable, install-ready as
 ## Public Sector Solutions / Grantmaking
 
 - **Pattern (schema):** [`patterns/canonical/grantmaking-object-reference.md`](patterns/canonical/grantmaking-object-reference.md) — **P7**
-- **Pattern (features/permissions):** [`patterns/canonical/nspires-postaward-grantmaking-psc-features-guide.md`](patterns/canonical/nspires-postaward-grantmaking-psc-features-guide.md) — **P16**
+- **Pattern (features/permissions):** `patterns/canonical/` — **P16** *(canonical file — maintainers only)*
 - **Pattern (org-extraction method):** [`patterns/canonical/org-metadata-extraction-audit.md`](patterns/canonical/org-metadata-extraction-audit.md) — **P8**
 - **Knowledge (raw source, already = P7/P8/P16):** `knowledge/grantmaking-objects.md`, `knowledge/awardDetails.md`, `knowledge/grantmaking-psc-features-guide.md`
 
 ## Salesforce Flow Approval Processes
 
-- **Pattern:** [`patterns/canonical/nspires-postaward-flow-approval-processes-guide.md`](patterns/canonical/nspires-postaward-flow-approval-processes-guide.md) — **P14**
+- **Pattern:** `patterns/canonical/` — **P14** *(canonical file — maintainers only)*
 - **Knowledge (raw source, already = P14):** `knowledge/flow-approval-processes-implementation-guide.md`
 
 ## OmniStudio Document Generation
 
-- **Pattern:** [`patterns/canonical/nspires-postaward-omnistudio-docgen-guide.md`](patterns/canonical/nspires-postaward-omnistudio-docgen-guide.md) — **P15**
+- **Pattern:** `patterns/canonical/` — **P15** *(canonical file — maintainers only)*
 - **Knowledge (raw source, already = P15):** `knowledge/omnistudio-document-generation-guide.md`
 
 ## Headless multi-surface MCP (Headless 360)

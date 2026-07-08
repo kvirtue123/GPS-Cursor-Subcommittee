@@ -46,4 +46,4 @@ data-cloud-sql-runner/
 
 ## Provenance
 
-As-shipped from the FWA federal fraud project (`FWA-Project/salesforce/.cursor/skills/`). Verified against a live Data Cloud org. If Salesforce changes the `ConnectApi.CdpQuery` surface, re-verify `dc-query.sh`.
+As-shipped from a live engagement's `.cursor/skills/` directory (full provenance kept privately). Verified against a live Data Cloud org. If Salesforce changes the `ConnectApi.CdpQuery` surface, re-verify `dc-query.sh`.

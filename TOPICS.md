@@ -65,16 +65,16 @@ For each topic: grab the **Pattern/Skill** first (the reusable, install-ready as
 ## Headless multi-surface MCP (Headless 360)
 
 - **Pattern (system topology):** [`patterns/templates/headless-mcp-tool-plane.md`](patterns/templates/headless-mcp-tool-plane.md) — **P21**
-- **Pattern (Cursor prompt packs):** [`patterns/canonical/headless360-mcp-tools-prompt-pack.md`](patterns/canonical/headless360-mcp-tools-prompt-pack.md) + [`headless360-react-prompt-pack.md`](patterns/canonical/headless360-react-prompt-pack.md) — **P30**
+- **Pattern (Cursor prompt packs):** `patterns/canonical/` — **P30** *(canonical file — maintainers only)*
 - **Rule:** [`rules/templates/mcp-allowlist.settings.local.json`](rules/templates/mcp-allowlist.settings.local.json) — **R5**
 - **Skill:** [`skills/sf-docs-mcp/`](skills/sf-docs-mcp/) — **S3**
-- **Knowledge (raw source, already = P21):** `knowledge/headless-360-build-plan.md`, `knowledge/headless360-skills.md` (reference-only)
+- **Knowledge (raw source, already = P21):** [`knowledge/headless-360-build-plan.md`](knowledge/headless-360-build-plan.md), [`knowledge/headless360-skills.md`](knowledge/headless360-skills.md) (reference-only)
 
 ## Demoing (live, probabilistic AI, synthetic data)
 
-- **Pattern (playbook):** [`patterns/canonical/probabilistic-ai-demo-playbook.md`](patterns/canonical/probabilistic-ai-demo-playbook.md) — **P9**
-- **Pattern (run-of-show + fallback matrix):** [`patterns/canonical/fwa-headless360-se-runbook.md`](patterns/canonical/fwa-headless360-se-runbook.md) — **P19**
-- **Pattern (synthetic data):** [`patterns/canonical/fwa-demo-data-guide.md`](patterns/canonical/fwa-demo-data-guide.md) — **P20**
+- **Pattern (playbook):** `patterns/canonical/` — **P9** *(canonical file — maintainers only)*
+- **Pattern (run-of-show + fallback matrix, public template):** [`patterns/templates/live-demo-runbook.md`](patterns/templates/live-demo-runbook.md) — **P19**
+- **Pattern (synthetic data, public template):** [`patterns/templates/synthetic-demo-data-guide.md`](patterns/templates/synthetic-demo-data-guide.md) — **P20**
 
 ## LWC / Experience Cloud
 

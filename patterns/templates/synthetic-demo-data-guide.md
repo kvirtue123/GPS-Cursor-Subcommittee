@@ -2,9 +2,9 @@
 
 A fill-in-the-blanks workflow for building **synthetic demo data** for a Salesforce (or Data Cloud) demo: discover the org schema first, design hero records around the demo beats, generate with a seeded Faker pipeline, bulk-load parent→child, then tear down repeatably.
 
-> Source pattern: FWA SE demo-data guide (`FWA-Project/docs/templates/demo-data-guide.md`).
-> The full as-shipped guide (with runnable Python and Data Cloud Ingestion-API steps) is preserved at
-> `patterns/canonical/fwa-demo-data-guide.md`. This file is the condensed, token-conformed template.
+> Source pattern: an SE demo-data guide from a live engagement. The full as-shipped guide (with runnable
+> Python and Data Cloud Ingestion-API steps, plus provenance) is preserved privately in `patterns/canonical/`.
+> This file is the condensed, token-conformed, genericized template.
 
 ---
 

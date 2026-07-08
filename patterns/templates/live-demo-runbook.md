@@ -2,8 +2,7 @@
 
 A reusable structure for a **high-stakes live demo** (customer-facing, on-stage, recorded). It front-loads everything that prevents a live failure and pre-scripts the recovery for everything that can still go wrong, so the presenter never debugs live.
 
-> Source pattern: FWA "Headless 360" SE runbook + customer-demo playbook
-> (`FWA-Project/docs/headless360_se_runbook.docx.md`, `docs/phase_3/phase3-customer-demo-prompt.md`).
+> Source pattern: a "Headless 360" engagement's SE runbook + customer-demo playbook (kept in full, with provenance, in `patterns/canonical/`).
 
 ---
 

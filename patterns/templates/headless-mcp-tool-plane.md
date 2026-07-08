@@ -2,8 +2,7 @@
 
 Publish a capability **once** as hosted MCP tools, then consume it from **N completely different surfaces** (an in-platform agent, Slack, a generated web app, a script) over the same JSON-RPC contract. "One data plane, many callers." The opposite of building a bespoke integration per surface.
 
-> Source pattern: FWA "Headless 360" — two Salesforce Hosted MCP servers backing a Slack agent, a React app, and Cursor
-> (`FWA-Project/docs/headless-360-build-plan.md`, `docs/phase_3/phase3-customer-demo-prompt.md`, `demo/CLAUDE.md`).
+> Source pattern: a "Headless 360" engagement — two Salesforce Hosted MCP servers backing a Slack agent, a React app, and Cursor, built from a shared build plan and customer-demo prompt (see `knowledge/headless-360-build-plan.md`).
 
 ---
 

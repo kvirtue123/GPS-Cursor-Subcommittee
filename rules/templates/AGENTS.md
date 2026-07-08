@@ -45,4 +45,4 @@ Read [`{{KNOWLEDGE_REF}}`]({{KNOWLEDGE_REF}}) first. It contains the subagent re
 - Do **not** guess {{MEASURED_VALUES}} (metrics, scores, accuracy) — read {{METRICS_SOURCE}}.
 - Do **not** re-explore the repo each session — start from this file + the doc map.
 
-> Provenance note: the "what NOT to do" + compact "source-of-truth pointers" pattern was reinforced by the FWA federal fraud project's root and `demo/` `CLAUDE.md` orientation files.
+> Provenance note: the "what NOT to do" + compact "source-of-truth pointers" pattern was reinforced by a real engagement's root and `demo/` `CLAUDE.md` orientation files (kept privately, with full provenance, in `rules/canonical/`).

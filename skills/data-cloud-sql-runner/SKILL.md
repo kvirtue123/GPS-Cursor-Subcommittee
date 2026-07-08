@@ -20,8 +20,8 @@ This skill is the enforcement arm of the **R10 Verification & Confidence Protoco
 ## How to use (workflow)
 
 1. **List** objects to confirm exact, case-sensitive names: `dc-list-objects.sh`
-2. **Describe** the target to get real field API names: `dc-describe.sh FWA_Owns__dlm`
-3. **Query** using only verified names, always with a `LIMIT`: `dc-query.sh "SELECT source_id__c FROM FWA_Owns__dlm LIMIT 5"`
+2. **Describe** the target to get real field API names: `dc-describe.sh Individual_Owns__dlm`
+3. **Query** using only verified names, always with a `LIMIT`: `dc-query.sh "SELECT source_id__c FROM Individual_Owns__dlm LIMIT 5"`
 
 Never skip steps 1–2 and assume field names from CSV headers or prior docs — Data Cloud transforms names (casing, `ssot__` prefix, pluralization).
 
@@ -46,4 +46,4 @@ Never skip steps 1–2 and assume field names from CSV headers or prior docs —
 - Output is the last `@@@…@@@` USER_DEBUG payload, parsed to JSON.
 
 ## Provenance
-As-shipped from the FWA federal fraud project (`FWA-Project/salesforce/.cursor/skills/`), verified against a Data Cloud org, API v62.
+As-shipped from a live engagement's `.cursor/skills/` directory (full provenance kept privately), verified against a Data Cloud org, API v62.

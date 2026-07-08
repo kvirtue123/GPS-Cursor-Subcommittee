@@ -1,6 +1,6 @@
 # GPS Cursor Subcommittee — Best Practices
 
-A shared, collaborative catalog of reusable Cursor assets — **Rules**, **Skills**, and **Patterns** — contributed by the subcommittee, for the subcommittee. The goal is simple: stop re-solving the same problems on every engagement. Someone figures it out once, it lands here, everyone else pulls from it.
+A shared, collaborative catalog of reusable Cursor assets — **Rules**, **Skills**, **Patterns**, and **Knowledge** — contributed by the subcommittee, for the subcommittee. The goal is simple: stop re-solving the same problems on every engagement. Someone figures it out once, it lands here, everyone else pulls from it.
 
 Every entry comes from real project work, not speculation. It grows as members add to it.
 
@@ -9,14 +9,17 @@ Every entry comes from real project work, not speculation. It grows as members a
 - **Rules** — behavioral guardrails you install as small config files in `.cursor/rules/`. They shape how the agent works on your project (architecture to follow, when to update docs, what to verify before writing code).
 - **Skills** — reusable task recipes you invoke by name. The agent follows a complete, tested workflow instead of you re-explaining it each time.
 - **Patterns** — repeatable workflows and approaches in plain Markdown. Not installed code — structured guidance you keep in your project and reference when you need it.
+- **Knowledge** — raw domain/product reference material (scraped official docs, feature guides, language references) in `knowledge/`. Not an installable asset — a browsable, tagged reference library. See [`knowledge/README.md`](knowledge/README.md).
 
 See **[`BEST-PRACTICES.md`](BEST-PRACTICES.md)** for the catalog inventory — what exists and what each asset covers. Installable files live in `rules/`, `skills/`, and `patterns/`.
 
+**Starting a new project and want everything on one topic** (e.g. "Lightning Types," "Data Cloud," "Agent Script")? Use **[`TOPICS.md`](TOPICS.md)** instead — it cross-links the Rule + Skill + Pattern + Knowledge files for each feature area in one place.
+
 ## How to use it
 
-1. **Browse [`BEST-PRACTICES.md`](BEST-PRACTICES.md)** to see what exists and find what fits your problem.
-2. **Grab the file** for the asset you want from the repo.
-3. **Drop it into your project** — Rules go in `.cursor/rules/`, Skills are invoked by name, Patterns live in your `docs/` for reference.
+1. **Browse [`BEST-PRACTICES.md`](BEST-PRACTICES.md)** (by asset type) or **[`TOPICS.md`](TOPICS.md)** (by feature area) to find what fits your problem.
+2. **Grab the file** for the asset you want from the repo — every catalog card ends with a **"Canonical example:"** line that's the literal path to copy.
+3. **Drop it into your project** — Rules go in `.cursor/rules/`, Skills are invoked by name, Patterns/Knowledge live in your `docs/` for reference.
 
 New to it? **R4 (AGENTS.md)**, **R1 (architecture lock)**, **R2 (doc-sync)**, and **P12 (session briefing)** pay off immediately on any project.
 

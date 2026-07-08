@@ -48,8 +48,21 @@ Examples:
 - Multi-surface agent architecture
 - LWC data access, validation, and auto-save patterns
 - Co-authoring workflows with Cursor's Ask/Plan/Agent modes
+- Data Cloud, Agentforce instruction/topic, and Voice reference libraries
 
 → `patterns/templates/`
+
+---
+
+## Knowledge
+
+Raw domain/product reference material — scraped official docs, feature guides, language references — kept in `knowledge/` at the repo root. Distinct from Rules/Skills/Patterns: it's not an installable asset, just a browsable reference library, tagged by feature area. Some `knowledge/` files are the literal source a Pattern was built from (flagged in place, not duplicated); others are reference-only.
+
+→ `knowledge/` — see [`knowledge/README.md`](knowledge/README.md) for the index and tagging convention.
+
+## Find by topic
+
+Looking for "everything on Lightning Types" or "everything on Data Cloud" across Rules + Skills + Patterns + Knowledge in one place? See **[`TOPICS.md`](TOPICS.md)**.
 
 ---
 
